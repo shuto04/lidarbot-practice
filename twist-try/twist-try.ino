@@ -42,12 +42,16 @@ void ControlWheel(int8_t X, int8_t Y, byte A)// X, Y, A: -7 ~ 7
 }
 
 void loop(){
+    // 前進
     ControlWheel(0, 7, 0);
     delay(1000);
+    // 旋回
     ControlWheel(7, 0, 0);
     delay(1000);
+    // 並進
     ControlWheel(7, 0, 1);
     delay(1000);
+    // 停止
     ControlWheel(0, 0, 0);
     delay(1000);
 }
